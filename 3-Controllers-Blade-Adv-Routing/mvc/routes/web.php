@@ -36,4 +36,9 @@ Route::get('/profile', function () {
 Route::get('/start', [TestController::class, 'index']);
 Route::get('/first', [UserController::class, 'index']);
 
+// Loops - Blade
 Route::get('/loops', [LoopsController::class, 'index']);
+
+Route::Get('/users/profile', function () {
+    //
+})->name('profile');
