@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\TestController;
+use App\Http\Controllers\LoopsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,13 @@ Route::get('/test2', function () {
     return view('test2');
 });
 
+Route::get('/profile', function () {
+    return view('greeting', ['name' => 'Kiranpal']);
+});
+
 // Controllers
 
 Route::get('/start', [TestController::class, 'index']);
 Route::get('/first', [UserController::class, 'index']);
+
+Route::get('/loops', [LoopsController::class, 'index']);
