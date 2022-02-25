@@ -24,3 +24,10 @@ Route::get('/user', function () {
 Route::get('/about', function () {
     return view('about');
 });
+Route::get('/aboutus', function () {
+    return redirect('about');
+});
+
+Route::get('/{name}', function ($name) {
+    return view('welcome', ['name' => $name]);
+});
