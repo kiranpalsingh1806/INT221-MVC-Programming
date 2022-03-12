@@ -24,44 +24,44 @@ class UserRegistration extends Controller
         echo 'Password: ' . $password;
         echo '<br>';
 
-        // if ($request->has('name')) {
-        //     echo 'name is Found with has method';
-        // } else {
-        //     echo 'Not Found';
-        // }
-        // echo '<br>';
+        if ($request->has('name')) {
+            echo 'name is Found with has method';
+        } else {
+            echo 'Not Found';
+        }
+        echo '<br>';
 
-        // if ($request->has(['username', 'password'])) {
-        //     echo 'username and password Found with has method';
-        // } else {
-        //     echo 'Not Found';
-        // }
-        // echo '<br>';
+        if ($request->has(['username', 'password'])) {
+            echo 'username and password Found with has method';
+        } else {
+            echo 'Not Found';
+        }
+        echo '<br>';
 
-        // if ($request->hasAny(['username', 'password'])) {
-        //     echo 'One of username or password is Found';
-        // } else {
-        //     echo 'Not Found';
-        // }
-        // echo '<br>';
+        if ($request->hasAny(['username', 'password'])) {
+            echo 'One of username or password is Found';
+        } else {
+            echo 'Not Found';
+        }
+        echo '<br>';
 
-        // if ($request->filled('name')) {
-        //     echo 'name is filled';
-        // }
-        // echo '<br>';
+        if ($request->filled('name')) {
+            echo 'name is filled';
+        }
+        echo '<br>';
 
-        // if ($request->missing('email')) {
-        //     echo 'email is missing';
-        // }
-        // echo '<br>';
+        if ($request->missing('email')) {
+            echo 'email is missing';
+        }
+        echo '<br>';
 
-        // $request->whenFilled('name', function ($input) {
-        //     echo "name is whenfilled:" . $input;
-        // });
-        // echo '<br>';
+        $request->whenFilled('name', function ($input) {
+            echo "name is whenfilled:" . $input;
+        });
+        echo '<br>';
 
-        // $request->whenHas('name', function ($input) {
-        //     echo "name is found with whenHas method:" . $input;
-        // });
+        $request->whenHas('name', function ($input) {
+            echo "name is found with whenHas method:" . $input;
+        });
     }
 }
