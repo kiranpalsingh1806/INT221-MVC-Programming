@@ -6,7 +6,7 @@
 
 <body>
     <form action="/user/register" method="post">
-        <!-- <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>"> -->
+        <input type="hidden" name="_token" value="<?php echo csrf_token() ?>">
 
         <table>
             <tr>
@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input type="text" name="password" /></td>
+                <td><input type="password" name="password" /></td>
             </tr>
             <tr>
                 <td colspan="2">

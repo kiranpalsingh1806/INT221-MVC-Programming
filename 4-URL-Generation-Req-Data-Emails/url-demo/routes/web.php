@@ -28,4 +28,4 @@ Route::get('/register', function () {
     return view('register');
 });
 
-Route::get('/user/register', [UserRegistration::class, 'postRegister']);
+Route::post('/user/register', [UserRegistration::class, 'postRegister']);
