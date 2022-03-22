@@ -13,10 +13,10 @@ class Website extends Controller
             'name' => "Kiranpal Singh",
             'data' => "Hello User"
         ];
-        $user['to'] = "kiranpalsingh1806@gmail.com";
+        $user['to'] = "ajatinsohlot@gmail.com";
         Mail::send('mail', $data, function ($messages) use ($user) {
             $messages->to($user['to']);
-            $messages->subject("Hello Dev");
+            $messages->subject("Hello Developer !!!");
         });
     }
 }
