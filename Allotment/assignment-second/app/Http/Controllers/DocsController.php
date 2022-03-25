@@ -12,10 +12,11 @@ class DocsController extends Controller
         $num2 =  $req->input()["email"];
         $num3 =  $req->input()["phone"];
         $num4 =  $req->input()["cgpa"];
-        // $num2 =  $req->input()["fileToUpload"];
+        $num5 =  $req->file->extension();
         echo "Full name :  $num1 <br>";
         echo "Email Address :  $num2 <br>";
         echo "Phone Number :  $num3 <br>";
         echo "CGPA :  $num4 <br>";
+        echo "Document :  $num5 <br>";
     }
 }

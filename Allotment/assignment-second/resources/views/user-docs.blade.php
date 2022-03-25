@@ -9,7 +9,6 @@
         <input type="number" id="phone" name="phone" value=""><br><br>
         <label for="cgpa">CGPA:</label><br>
         <input type="text" id="cgpa" name="cgpa" value=""><br><br>
-        <label for="fileToUpload">Upload your documents here : </label><br>
-        <input type="file" name="fileToUpload" id="fileToUpload"><br><br>
         <input type="submit" value="Submit" name="submit">
     </form>
+    
