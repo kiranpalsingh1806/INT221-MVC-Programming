@@ -3,7 +3,7 @@
     @csrf
     <label for="fromMail">From Mail ID:</label>
     <input type="text" name="fromMail" id="fromMail" value=""/> <br> <br>
-    <label for="toMail">Enter second number:</label>
+    <label for="toMail">To Mail ID:</label>
     <input type="text" name="toMail" id="toMail" value=""/> <br> <br>
     <label for="message">Enter your message:</label>
     <input type="text" name="message" id="message" value=""/> <br> <br>
