@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="container">
-  <h1 class="text-center mb-4">Todolist</h1>
+  <h1 class="text-center mb-4">Contact List</h1>
   @include('flash') {{--  this showing flash meessage  --}}
 
 <div class="d-flex justify-content-center">

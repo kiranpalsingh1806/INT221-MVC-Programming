@@ -3,7 +3,7 @@
 
  
 <div class="d-flex justify-content-center mb-5">
-    <h1 class="mr-4">Todolist</h1>
+    <h1 class="mr-4">Contact List</h1>
     <a href="{{url('todo/create')}}" type="button" class="btn btn-primary mb-2">Create</a>
 </div>
 @include('flash')
